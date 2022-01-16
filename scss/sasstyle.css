@@ -1,0 +1,1206 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+body {
+  overflow: hidden;
+  background: #030a12;
+  background: linear-gradient(135deg, #030a12 0%, #103249 100%);
+}
+
+.homeContainer {
+  position: relative;
+  height: 100vh;
+  width: 80%;
+  margin: 0px auto 50px auto;
+}
+
+.homeContainer .navContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.homeContainer .navContainer .logo {
+  position: relative;
+  width: 40%;
+  z-index: 100;
+}
+
+.homeContainer .navContainer .logo h1 {
+  margin: 8px 25px 5px 50px;
+  font-size: 45px;
+  color: #cfcdd6;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.homeContainer .navContainer .navcontent {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.homeContainer .navContainer .navcontent .crossBar {
+  display: none;
+}
+
+.homeContainer .navContainer .navcontent nav {
+  padding: 8px 15px;
+  margin: 15px 25px;
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+  font-variant: small-caps;
+}
+
+.homeContainer .navContainer .navcontent a {
+  color: #f1e1f8;
+  text-decoration: none;
+}
+
+.homeContainer .navContainer .navcontent a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.homeContainer .hamBurger {
+  display: none;
+}
+
+.homeContainer .smcontainer {
+  margin: 30px 5%;
+  position: absolute;
+  top: 30%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.homeContainer .smcontainer .homehcontent {
+  font-size: 95px;
+  line-height: 105px;
+  font-weight: 700;
+  cursor: default;
+  font-family: "Marcellus SC", serif;
+  color: white;
+}
+
+.homeContainer .smcontainer .homepcontent {
+  color: #928f8f;
+  font-size: 22px;
+  line-height: 38px;
+  font-weight: 400;
+  margin-top: 15px;
+  cursor: default;
+}
+
+.homeContainer .smcontainer .homebtn {
+  position: relative;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 20px 30px;
+  margin: 30px;
+  background: -webkit-gradient(linear, right top, left top, from(#071220), to(#020408));
+  background: linear-gradient(to left, #071220 0%, #020408 100%);
+  color: #fff;
+  cursor: pointer;
+  -o-border-image: linear-gradient(45deg, #f8f9fc, #bd89db) 1;
+     border-image: linear-gradient(45deg, #f8f9fc, #bd89db) 1;
+  border: 4px solid transparent;
+  border-radius: 20px;
+  background-clip: padding-box;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.homeContainer .smcontainer .homebtn::after {
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  left: -4px;
+  right: -4px;
+  background: -webkit-gradient(linear, right top, left top, from(#bf4de2), to(#e7e6e6));
+  background: linear-gradient(to left, #bf4de2, #e7e6e6);
+  content: "";
+  z-index: -1;
+  border-radius: 20px;
+}
+
+.homeContainer .smcontainer .homebtn:hover {
+  padding: 17px 27px;
+  margin: 33px;
+  font-size: 23px;
+}
+
+.homeContainer .smcontainer .bubbleOne .bubbleimgOne {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  left: -360px;
+  bottom: -230px;
+  z-index: -1;
+}
+
+.homeContainer .foranimation {
+  margin: 0 8%;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 22%;
+  right: 0;
+  height: 60%;
+  width: 25%;
+  border-radius: 60px;
+}
+
+.homeContainer .foranimation .imgback {
+  border-radius: 60px;
+  background-image: linear-gradient(267deg, #8129ef, #f83bc3);
+  -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(5deg) skew(0deg, 0deg);
+          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(5deg) skew(0deg, 0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-box-shadow: 2px 2px 15px 5px rgba(17, 2, 51, 0.671);
+          box-shadow: 2px 2px 15px 5px rgba(17, 2, 51, 0.671);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  z-index: 2;
+}
+
+.homeContainer .foranimation .imgback .bubble {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  right: -70px;
+  top: -75px;
+  z-index: -1;
+}
+
+.homeContainer .foranimation .imgback .imgfront {
+  height: 100%;
+  width: 100%;
+  border-radius: 60px;
+  -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-10deg) skew(0deg, 0deg);
+          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-10deg) skew(0deg, 0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-box-shadow: 1px 1px 24px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 1px 1px 24px 0px rgba(0, 0, 0, 0.75);
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -o-pixelated;
+      image-rendering: pixelated;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.homeContainer .foranimation .imgback .imgfront:hover {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.homeContainer .foranimation .imgback:hover {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.aboutContainer {
+  position: relative;
+  height: auto;
+  width: 80%;
+  margin: 50px auto 100px auto;
+  padding-top: 200px;
+}
+
+.aboutContainer .imagebolte .bubbleimgTwo {
+  position: absolute;
+  height: 360px;
+  width: 360px;
+  right: -300px;
+  bottom: -230px;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.aboutContainer .skillContainer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+  height: 100%;
+}
+
+.aboutContainer .skillContainer .progress {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px;
+  text-align: center;
+}
+
+.aboutContainer .skillContainer .progress .barOverflow {
+  /* Wraps the rotating .bar */
+  position: relative;
+  width: 180px;
+  height: 100px;
+  /* Half circle (overflow) */
+  margin-bottom: -18px;
+  /* bring the numbers up */
+  overflow: hidden;
+}
+
+.aboutContainer .skillContainer .progress .barOverflow .bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 180px;
+  /* full circle! */
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 20px solid #ccc;
+  /* half gray, */
+  border-bottom-color: #0bf;
+  /* half azure */
+  border-right-color: #0bf;
+}
+
+.aboutContainer .skillContainer span {
+  color: azure;
+  font-size: 20px;
+}
+
+.aboutContainer .skillContainer span::after {
+  content: "%";
+}
+
+.aboutContainer .skillContainer .skillContent {
+  font-size: 25px;
+  color: azure;
+  margin-top: 15px;
+  cursor: default;
+  font-family: "Marcellus SC", serif;
+}
+
+.aboutContainer .aboutContent {
+  width: 40%;
+  margin: 0 5px;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  overflow: hidden;
+}
+
+.aboutContainer .aboutContent h1 {
+  font-size: 100px;
+  color: azure;
+  font-weight: bold;
+  cursor: default;
+  font-family: "Marcellus SC", serif;
+}
+
+.aboutContainer .aboutContent p {
+  color: #bbb8b8;
+  font-size: 25px;
+  font-weight: 400;
+  cursor: default;
+}
+
+.pcontainer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 230px;
+  padding-bottom: 100px;
+  width: 80%;
+  height: auto;
+  margin: 50px auto 70px auto;
+  overflow: hidden;
+}
+
+.pcontainer .pabout {
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 85px;
+  cursor: default;
+  color: azure;
+  margin-top: 80px;
+  font-family: "Marcellus SC", serif;
+}
+
+.pcontainer .pbox {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: color;
+      -ms-flex-align: color;
+          align-items: color;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.pcontainer .pbox .pcard {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 30px;
+  -webkit-box-shadow: 2px 2px 50px 20px rgba(31, 50, 156, 0.5);
+          box-shadow: 2px 2px 50px 20px rgba(31, 50, 156, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.pcontainer .pbox .pcard img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.8;
+}
+
+.pcontainer .pbox .pcard .pcontent {
+  padding: 20px;
+  text-align: center;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.pcontainer .pbox .pcard .pcontent h2 {
+  position: absolute;
+  top: -80px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+}
+
+.pcontainer .pbox .pcard .pcontent h3 {
+  font-size: 1.8em;
+  color: #fff;
+  text-shadow: 3px 3px 5px black;
+  z-index: 1;
+}
+
+.pcontainer .pbox .pcard .pcontent p {
+  font-size: 1em;
+  color: #fff;
+  text-shadow: 3px 3px 5px black;
+  font-weight: 300;
+}
+
+.pcontainer .pbox .pcard .pcontent a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background: #fff;
+  color: #000;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pcontainer .pcard:hover .pcontent {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
+}
+
+.contactContainer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+  height: auto;
+  margin: 30px auto 100px auto;
+  padding-top: 30px;
+}
+
+.contactContainer .imagebolte .bubbleimgThree {
+  position: absolute;
+  height: 280px;
+  width: 280px;
+  left: -226px;
+  top: -100px;
+  z-index: -1;
+  overflow: auto;
+}
+
+.contactContainer .contactContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40%;
+  height: auto;
+}
+
+.contactContainer .contactContent h1 {
+  font-size: 100px;
+  color: azure;
+  font-weight: bold;
+  cursor: default;
+  font-family: "Marcellus SC", serif;
+}
+
+.contactContainer .contactContent p {
+  color: #b3b3b3;
+  font-size: 25px;
+  font-weight: 400;
+  cursor: default;
+}
+
+.contactContainer .contactBorder {
+  width: 50%;
+  height: auto;
+}
+
+.contactContainer .contactBorder .imagebolte .bubbleimgFour {
+  position: absolute;
+  height: 280px;
+  width: 280px;
+  right: -55px;
+  top: 250px;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.contactContainer .contactBorder .border {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: auto;
+  width: 90%;
+  background: -webkit-gradient(linear, right top, left top, from(#0d203a), to(#091325));
+  background: linear-gradient(to left, #0d203a 0%, #091325 100%);
+  -o-border-image: linear-gradient(45deg, #f8f9fc, #6148ff) 1;
+     border-image: linear-gradient(45deg, #f8f9fc, #6148ff) 1;
+  border: 20px solid transparent;
+  background-clip: padding-box;
+  margin: auto;
+}
+
+.contactContainer .contactBorder .border form {
+  width: 85%;
+  margin: 5px auto 5px auto;
+}
+
+.contactContainer .contactBorder .border form input {
+  position: relative;
+  height: 65px;
+  width: 100%;
+  margin: 20px auto 10px auto;
+  padding-right: 26px;
+  padding-left: 26px;
+  border: none;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.06);
+  -webkit-transition: color 350ms ease, background-color 350ms ease;
+  transition: color 350ms ease, background-color 350ms ease;
+  color: azure;
+  font-size: 20px;
+  -webkit-box-shadow: 1px 1px 10px 3px rgba(23, 106, 161, 0.5);
+          box-shadow: 1px 1px 10px 3px rgba(23, 106, 161, 0.5);
+}
+
+.contactContainer .contactBorder .border form .firstName,
+.contactContainer .contactBorder .border form .lastName {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  width: 47%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+.contactContainer .contactBorder .border form .firstName {
+  margin-right: 4.7%;
+}
+
+.contactContainer .contactBorder .border form textarea {
+  color: #fcfcfd;
+  min-height: 176px;
+  margin: 20px auto;
+  padding: 24px 24px 16px;
+  border: 0px solid #000;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.06);
+  -webkit-transition: background-color 350ms ease;
+  transition: background-color 350ms ease;
+  font-size: 18px;
+  -webkit-box-shadow: 1px 1px 10px 3px rgba(23, 106, 161, 0.5);
+          box-shadow: 1px 1px 10px 3px rgba(23, 106, 161, 0.5);
+  width: 100%;
+}
+
+.contactContainer .contactBorder .border form textarea:focus,
+.contactContainer .contactBorder .border form input:focus {
+  outline: none;
+}
+
+.contactContainer .contactBorder .border form .contactBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 35%;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px 0px;
+  margin: 25px auto 40px auto;
+  background: -webkit-gradient(linear, right top, left top, from(#0c203b), to(#070e1d));
+  background: linear-gradient(to left, #0c203b 0%, #070e1d 100%);
+  color: #fff;
+  cursor: pointer;
+  border: 5px solid #c086ca;
+  border-radius: 20px;
+}
+
+.contactContainer .contactBorder .border::after {
+  position: absolute;
+  top: -6px;
+  bottom: -6px;
+  left: -6px;
+  right: -6px;
+  background: -webkit-gradient(linear, right top, left top, from(#6148ff), to(#c598ce));
+  background: linear-gradient(to left, #6148ff, #c598ce);
+  content: "";
+  z-index: -1;
+  border-radius: 15px;
+}
+
+.socialIconsContainer {
+  width: 80%;
+  margin: 80px auto 30px auto;
+  text-align: center;
+}
+
+.socialIconsContainer ul li {
+  list-style-type: none;
+}
+
+.socialIconsContainer ul li a {
+  color: whitesmoke;
+  font-size: 35px;
+  list-style-type: none;
+  text-decoration: none;
+  margin-left: 30px;
+  margin-right: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.socialIconsContainer ul li a:hover {
+  color: #c598ce;
+}
+
+.socialIconsContainer hr {
+  width: 100%;
+  margin: 50px auto 40px auto;
+}
+
+.socialIconsContainer .copyright {
+  width: 100%;
+}
+
+.socialIconsContainer .copyright p {
+  color: #c094ce;
+  text-align: center;
+  font-size: 25px;
+  cursor: default;
+  font-family: "Marcellus SC", serif;
+}
+
+.socialIconsContainer .copyright p span {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+@media screen and (max-width: 1650px) {
+  .homeContainer {
+    width: 90%;
+  }
+  .pcontainer {
+    width: 90%;
+  }
+  .aboutContainer {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    overflow: hidden;
+  }
+  .homeContainer {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 0 100px 0;
+  }
+  .homeContainer .smcontainer {
+    top: 220px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homeContainer .smcontainer .homehcontent {
+    font-size: 80px;
+    line-height: 103px;
+    font-weight: 700;
+    cursor: default;
+    font-family: "Marcellus SC", serif;
+    color: white;
+    text-align: center;
+  }
+  .homeContainer .smcontainer .homepcontent {
+    display: none;
+  }
+  .homeContainer .smcontainer .homebtn {
+    font-size: 40px;
+  }
+  .homeContainer .foranimation {
+    position: relative;
+    top: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 38%;
+    width: 40%;
+  }
+  .aboutContainer {
+    width: 100%;
+    margin: 50px 0;
+  }
+  .aboutContainer .imagebolte .bubbleimgTwo {
+    right: -185px;
+  }
+  .aboutContainer .skillContainer .progress {
+    margin: 30px;
+  }
+  .aboutContainer .skillContainer .progress .barOverflow {
+    height: 110px;
+  }
+  .aboutContainer .skillContainer .progress .barOverflow .bar {
+    border: 25px solid #ccc;
+    border-bottom-color: #0bf;
+    /* half azure */
+    border-right-color: #0bf;
+  }
+  .aboutContainer .skillContainer .progress span {
+    font-size: 35px;
+  }
+  .aboutContainer .skillContainer .progress .skillContent {
+    margin-top: 40px;
+    font-size: 33px;
+  }
+  .aboutContainer .aboutContent {
+    margin: 0 19px 0 5px;
+  }
+  .aboutContainer .aboutContent h1 {
+    font-size: 91px;
+  }
+  .aboutContainer .aboutContent p {
+    font-size: 35px;
+  }
+  .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .contactContainer .contactContent {
+    width: 100%;
+    text-align: center;
+  }
+  .contactContainer .contactContent p {
+    display: none;
+  }
+  .contactContainer .contactBorder {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .contactContainer .contactBorder .border {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 40px;
+    width: 70%;
+  }
+  .contactContainer .contactBorder .border textarea {
+    padding: 24px 24px 16px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .homeContainer #menuBar {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    margin-top: 0;
+    z-index: 5;
+    overflow: hidden;
+    right: 1200px;
+    background-image: -webkit-gradient(linear, right bottom, left top, from(#9e48bc), color-stop(#895dc4), color-stop(#776cc5), color-stop(#6b78c2), to(#6882bb));
+    background-image: linear-gradient(to left top, #9e48bc, #895dc4, #776cc5, #6b78c2, #6882bb);
+    -webkit-box-shadow: 1px 1px 150px -35px rgba(25, 50, 67, 0.75) inset;
+            box-shadow: 1px 1px 150px -35px rgba(25, 50, 67, 0.75) inset;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  .homeContainer #menuBar .logo {
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    right: 1200px;
+  }
+  .homeContainer #menuBar .logo h1 {
+    font-size: 65px;
+    color: #f1e1f8;
+  }
+  .homeContainer #menuBar .navcontent {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .homeContainer #menuBar .navcontent a .crossBar {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 60px;
+  }
+  .homeContainer #menuBar .navcontent nav {
+    text-align: center;
+    font-size: 50px;
+  }
+  .homeContainer .hamBurger {
+    position: absolute;
+    width: 100%;
+    right: 0px;
+    top: 0;
+    margin-top: 0;
+    display: inherit;
+  }
+  .homeContainer .hamBurger a {
+    display: block;
+    padding: 8px 15px;
+    margin: 15px 25px;
+    font-size: 60px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20%;
+    float: right;
+    color: #f1e1f8;
+    text-decoration: none;
+  }
+  .homeContainer .hamBurger h1 {
+    font-size: 65px;
+    color: #f1e1f8;
+    margin: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .homeContainer .smcontainer {
+    top: 170px;
+  }
+  .homeContainer .smcontainer .homehcontent {
+    font-size: 60px;
+    line-height: 85px;
+  }
+  .homeContainer .smcontainer .homebtn {
+    font-size: 25px;
+  }
+  .homeContainer .foranimation {
+    position: relative;
+    top: 170px;
+    height: 38%;
+    width: 38%;
+  }
+  .aboutContainer {
+    width: 100%;
+    margin: 75px 0;
+  }
+  .aboutContainer .imagebolte .bubbleimgTwo {
+    right: -190px;
+    height: 340px;
+    width: 340px;
+  }
+  .aboutContainer .skillContainer {
+    margin-left: 15px;
+  }
+  .aboutContainer .skillContainer .progress {
+    margin: 5px;
+  }
+  .aboutContainer .skillContainer .progress .barOverflow {
+    height: 107px;
+  }
+  .aboutContainer .skillContainer .progress span {
+    font: 35px;
+  }
+  .aboutContainer .skillContainer .progress .skillContent {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font-size: 25px;
+  }
+  .aboutContainer .aboutContent {
+    margin: 0 19px 0 5px;
+  }
+  .aboutContainer .aboutContent h1 {
+    font-size: 75px;
+  }
+  .aboutContainer .aboutContent p {
+    font-size: 25px;
+  }
+  .pcontainer {
+    margin-top: 150px;
+    width: 100%;
+  }
+  .pcontainer .pabout {
+    font-size: 75px;
+  }
+  .contactContainer .contactContent h1 {
+    font-size: 85px;
+  }
+  .contactContainer .contactBorder .border {
+    width: 80%;
+  }
+  .contactContainer .contactBorder .border form .firstName,
+  .contactContainer .contactBorder .border form .lastName {
+    margin-top: 40px;
+    margin-right: 12px;
+  }
+  .contactContainer .contactBorder .border form input {
+    height: 75px;
+    margin: 20px auto 15px auto;
+  }
+  .contactContainer .contactBorder .border form textarea {
+    padding: 24px 5px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .homeContainer #menuBar .logo h1 {
+    font-size: 40px;
+  }
+  .homeContainer #menuBar .navcontent a .crossBar {
+    font-size: 30px;
+  }
+  .homeContainer #menuBar .navcontent nav {
+    font-size: 30px;
+  }
+  .homeContainer .hamBurger a {
+    padding: 2px 5px;
+    margin: 5px 15px;
+    font-size: 50px;
+  }
+  .homeContainer .hamBurger h1 {
+    font-size: 40px;
+    color: #f1e1f8;
+    margin: 11px 11px;
+  }
+  .homeContainer .smcontainer {
+    top: 100px;
+  }
+  .homeContainer .smcontainer .homehcontent {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .homeContainer .smcontainer .homebtn {
+    padding: 15px 25px;
+    margin: 28px;
+    font-size: 20px;
+  }
+  .homeContainer .foranimation {
+    top: 100px;
+    height: 35%;
+    width: 50%;
+  }
+  .homeContainer .foranimation .imgback .bubble {
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    right: -50px;
+    top: -45px;
+    z-index: -1;
+  }
+  .aboutContainer {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    margin: 75px 0 50px 0;
+  }
+  .aboutContainer .imagebolte {
+    display: none;
+  }
+  .aboutContainer .skillContainer {
+    margin: 0;
+    width: 100%;
+  }
+  .aboutContainer .skillContainer .progress {
+    margin: 0px;
+  }
+  .aboutContainer .skillContainer .progress .barOverflow {
+    height: 92px;
+  }
+  .aboutContainer .skillContainer .progress .barOverflow .bar {
+    width: 160px;
+    height: 167px;
+  }
+  .aboutContainer .skillContainer .progress .skillContent {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font-size: 25px;
+  }
+  .aboutContainer .aboutContent {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .aboutContainer .aboutContent h1 {
+    font-size: 50px;
+  }
+  .aboutContainer .aboutContent p {
+    display: none;
+  }
+  .pcontainer {
+    margin: 25px auto 5px auto;
+    width: 100%;
+  }
+  .pcontainer .pabout {
+    margin-top: 20px;
+    font-size: 50px;
+  }
+  .pcontainer .pbox {
+    margin-top: -100px;
+  }
+  .pcontainer .pbox .pcard {
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+  }
+  .contactContainer {
+    margin-top: 0;
+  }
+  .contactContainer .contactContent h1 {
+    font-size: 55px;
+  }
+  .contactContainer .contactBorder {
+    margin-top: 35px;
+  }
+  .contactContainer .contactBorder .border {
+    margin-top: 10px;
+    width: 100%;
+    margin: auto;
+  }
+  .contactContainer .contactBorder .border form {
+    width: 100%;
+  }
+  .contactContainer .contactBorder .border form input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 45px;
+    margin: 20px auto 15px auto;
+    width: 90%;
+  }
+  .contactContainer .contactBorder .border form .firstName,
+  .contactContainer .contactBorder .border form .lastName {
+    display: -ms-inline-grid;
+    display: inline-grid;
+    width: 40%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 30px auto 0px auto;
+  }
+  .contactContainer .contactBorder .border form .firstName {
+    margin-right: 5%;
+    margin-left: 6%;
+  }
+  .contactContainer .contactBorder .border form textarea {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px auto;
+    min-height: 145px;
+    padding: 5px 5px;
+    width: 90%;
+  }
+  .contactContainer .contactBorder .border form .contactBtn {
+    font-size: 17px;
+    margin: 12px auto 20px auto;
+  }
+  .socialIconsContainer {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .socialIconsContainer ul li a {
+    margin: 10px 15px;
+  }
+  .socialIconsContainer .copyright p {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=sasstyle.css.map */
